@@ -1,0 +1,103 @@
+.wlcm{
+    font-style: italic;
+    padding-top: 14rem;
+    font-size: 12rem;
+    font-family: inherit;
+}
+.main_btns{
+    width: 19rem;
+    margin: 3rem;
+    margin-top: 7rem;
+}
+.hd_gall{
+    font-family: inherit;
+    font-style: italic;
+    padding: 2rem;
+    font-size: 4rem;
+}
+.hd_detail{
+    font-family: inherit;
+    font-style: italic;
+    padding: 2rem;
+    font-size: 4rem;
+}
+.for_border{
+    border-bottom: 4px solid rgb(0, 0, 0);
+    width: 74rem;
+    margin-left: 20rem;
+    padding-bottom: 2rem;
+}
+.under_det{
+    margin-top: 3rem;
+}
+
+.reg_p{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.log_p{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.reg_hd{
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+.reg_btn{
+    width: 8rem;
+    margin-left: 19rem;
+    margin-bottom: 25px;
+}
+.reg_form{
+    background-color: rgb(231, 231, 231);
+    width: 40%;
+    margin-left: 35rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+}
+.log_form{
+    background-color: rgb(231, 231, 231);
+    width: 40%;
+    margin-left: 35rem;
+    margin-top: 16rem;
+}
+.log_btn{
+    width: 8rem;
+    margin-left: 19rem;
+    margin-bottom: 4rem;
+}
+.home_lk{
+    width: 15rem;
+    margin: 3rem;
+    margin-top: 6rem;
+}
+.change_form{
+    width: 40%;
+    border: 3px solid black;
+    margin-left: 35rem;
+    margin-top: 16rem;
+}
+.chg_btn{
+    margin-left: 11rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.home_hd{
+    border-bottom: 4px solid black;
+    width: 62rem;
+    margin-left: 26rem;
+    margin-bottom: 7rem;
+}
+.upt_btn{
+    margin-left: 13rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.back_btn{
+    margin-left: 9rem;
+    margin-top: 1rem;
+}
+.backbtn_upt{
+    margin-left: 5rem;
+    margin-top: 19px;
+}

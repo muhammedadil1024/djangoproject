@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    {% for udtmsg in messages %}
+    {{udtmsg}}
+    {% endfor%}
+
+    <section class="container">
+        <div class="change_form rounded" style="margin-left: 35rem;">
+            <form action="" method="post">
+                <h1 class="text-center p-3">Update</h1>
+                {% csrf_token %}
+                <div class="form-group mx-5 pt-3">
+                    {{udt_form.Name}}
+                </div>
+                <div class="form-group mx-5 pt-3">
+                    {{udt_form.Age}}
+                </div>
+                <div class="form-group mx-5 pt-3">
+                    {{udt_form.Place}}
+                </div>
+                <div class="form-group mx-5 pt-3">
+                    {{udt_form.Email}}
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-warning upt_btn">
+                    <input type="submit" value="Back" class="btn btn-dark backbtn_upt">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

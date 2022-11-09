@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Details</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    <header class="bg-light">
+        <h1 class="hd_detail text-center">Details</h1>
+    </header>
+    <section class="text-center bg-light">
+        <div class="container">
+            <img src="{{view.Photos.url}}" alt="" width="100%" class="rounded">
+            <h4 class="under_det">Model Name : {{view.Name}}</h4>
+            <h4>Price : {{view.Price}}</h4>
+            <h4>Brand : {{view.Brand}}</h4>
+            <h4>Year : {{view.Year}}</h4>
+        </div>
+    </section>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

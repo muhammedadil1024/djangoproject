@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body class="bg-light">
+    {% for regmsg in messages %}
+    {{regmsg}}
+    {% endfor %}
+    
+    <section class="container">
+        <div class="text-center ind_div">
+            <h1 class="wlcm">Welcome</h1>
+            <a href="{% url 'myapp1:register' %}" class="btn btn-success main_btns">Register</a>
+            <a href="{% url 'myapp1:login' %}" class="btn btn-primary main_btns">Login</a>
+            <a href="{% url 'myapp1:gallery' %}" class="btn btn-danger main_btns">Gallery</a>
+            <h6 class="for_border"></h6>
+        </div>
+    </section>
+
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

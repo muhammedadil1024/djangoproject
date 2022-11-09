@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    {% for regmsg in messages %}
+    {{regmsg}}
+    {% endfor %}
+
+    <section class="container">
+        <div>
+            <form action="" method="post" enctype="multipart/form-data" class="reg_form rounded">
+                <h1 class="text-center reg_hd">Register</h1>
+                {% csrf_token %}
+                <div class="form-group pt-3">
+                    {{reg_form.Name}}
+                </div>
+                <div class="form-group pt-3">
+                    {{reg_form.Age}}
+                </div>
+                <div class="form-group pt-3">
+                    {{reg_form.Place}}
+                </div>
+                <div class="form-group pt-3">
+                    {{reg_form.Photo}}
+                </div>
+                <div class="form-group pt-3">
+                    {{reg_form.Email}}
+                </div>
+                <div class="form-group pt-3">
+                    {{reg_form.Password}}
+                </div>
+                <div class="form-group pt-3">
+                    {{reg_form.ConfirmPassword}}
+                </div>
+                <p class="form-group text-center reg_p"> Alredy have an account?<br>
+                    Click <a href="{% url 'myapp1:login' %}" class="btn btn-primary text-center">Login</a>
+                </p>
+                <div class="form-group pt-3">
+                    <input type="submit" value="Register" class="btn btn-success reg_btn" style="margin-bottom: 4rem;">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
